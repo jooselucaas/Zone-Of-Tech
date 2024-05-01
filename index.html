@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone Of Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bca0ebd2ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/z.png" type="image/x-icon">
+</head>
+
+<style>
+    .whatsapp-link {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+        transition: background-color 0.3s ease; /* Adiciona uma transição suave para mudança de cor de fundo */
+    }
+
+    .whatsapp-link:hover {
+        background-color: white; /* Altera a cor de fundo para branco quando o mouse passa sobre o link */
+        color: #25d366; /* Altera a cor do ícone para verde (#25d366) quando o mouse passa sobre o link */
+    }
+
+    .fa-whatsapp {
+        margin-top: 16px;
+    }
+</style>
+
+<body>
+
+    <!-- SEÇÃO I N I C I O -->
+    <section id="inicio">
+        <div class="container">
+            <header class="header">
+                <div class="container-header">
+
+                    <nav class="nav">
+                        <a href="https://www.instagram.com/zoneoftech.com.br/" class="instagram-logo">
+                        <h1 class="logo">ZONE OF TECH</h1>
+                        </a>
+                        <ul id="links">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#portifolio">Projetos</a></li>
+                            <li><a href="#contato">Contatos</a></li>
+                        </ul>
+
+                        <div class="menu">
+                            <i class="fa-solid fa-bars" style="font-size: 35px; color: white; cursor: pointer;"></i>
+                            <i class="fa-solid fa-times" style="font-size: 35px; color: white; cursor: pointer; display: none;"></i> <!-- Ícone de fechar inicialmente oculto -->
+                        </div>
+                    </nav>
+
+
+                </div>
+            </header>
+            <div class="apresentacao">
+                <p class="bemvindo">Bem-vindo à Zone Of Tech</p>
+                <h2>Agência de Desenvolvimento Web</h2>
+                <p class="descricao"> Explore nosso site e descubra como podemos levar sua presença online para o próximo nível.</p>
+                <a href="#contato">Entre em Contato</a>
+            </div>
+        </div>
+    <!-- FIM SEÇÃO I N I C I O -->
+
+    <!-- SEÇÃO M E U S  P R O J E T O S -->
+    <section id="portifolio">
+        <h3 class="titulo-secao">Meus Projetos</h3>
+        <div class="linha">
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="overlay"></div>
+                <img src="images/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descrição do Projeto</h4>
+                    <p>Desenho Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SEÇÃO M E U S  P R O J E T O S -->
+
+    <!-- SEÇÃO C O N T A T O -->
+    <section id="contato">
+        <h3 class="titulo-secao">Entre em contato conosco agora</h3>
+        <div class="container-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nome Completo *" class="input-mitad">
+                    <input type="email" placeholder="Direção de e-mail" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensagem" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    <!-- FIM SEÇÃO C O N T A T O -->
+
+    <!-- SEÇÃO I C O N E  W H A T S A P P -->
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=11976187148" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+    <!-- FIM SEÇÃO I C O N E  W H A T S A P P -->
+
+    <!-- SEÇÃO F O O T E R -->
+    <footer>
+        <p>Direitos autorais &copy; Zone Of Tech 2024</p>
+    </footer>
+    <!-- FIM SEÇÃO F O O T E R -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

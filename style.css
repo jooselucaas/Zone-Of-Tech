@@ -1,0 +1,373 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+
+        /* *******************/
+        /* seção I N I C I O */
+        /* *******************/
+
+        body {
+            font-family: 'Montserrat';
+            height: 100%;
+        }
+
+        .logo {
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 7%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: -75px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav .menu{
+            display: none;
+        }
+
+        #links.active {
+            display: block;
+        }
+
+
+        #inicio {
+            background: linear-gradient( rgba(19, 0, 72, 0.7), rgba(0, 0, 0, 0.7)), url("images/hero-bg.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+
+        #inicio .container .apresentacao {
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #inicio .container .apresentacao .bemvindo {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        #inicio .container .apresentacao h2 {
+            font-size: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        #inicio .container .apresentacao .descricao {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #inicio .container .apresentacao a {
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+
+        #inicio .container .apresentacao a:hover {
+            background-color: #001F3D;
+            transition: 0.5s;
+        }
+
+        #inicio .container header .container-header nav ul li a:hover {
+            color: #87D8F1;
+            transition: 0.5s;
+        }
+
+        nav h1 {
+            margin: 40px 0;
+            height: 100px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        nav h1:hover {
+            filter: brightness(120%);
+        }
+
+        /* *********************/
+        /* seção M E U S  P R O J E T O S */
+        /* *********************/
+        
+        #portifolio {
+            max-width: 1100px;
+            padding: 100px 0;
+            margin: auto;
+        }
+        
+        #portifolio .titulo-secao {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #001F3D;
+            text-decoration-thickness: 5px;
+        }
+        
+        #portifolio .linha {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        #portifolio .linha .projeto {
+            max-width: 450px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #portifolio .linha .projeto img {
+            width: 100%;
+            height: 100%;
+            ;
+            filter: grayscale(1);
+            object-fit: cover;
+            transition: .5s;
+        }
+        
+        #portifolio .linha .projeto:hover img {
+            filter: grayscale(0);
+        }
+        
+        #portifolio .linha .projeto .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
+        
+        #portifolio .fila .projeto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+
+        /* *******************/
+        /* seção C O N T A T O */
+        /* *******************/
+        
+        #contato {
+            padding: 100px 15px;
+            background-color: #f3f3f3;
+        }
+        
+        #contato .titulo-secao {
+            margin-bottom: 20px;
+        }
+        
+        #contato .container-form {
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        #contato .container-form .fila {
+            margin-bottom: 15px;
+        }
+        
+        #contato .container-form .mitad {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #contato .container-form input,
+        #contato .container-form textarea {
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid #919191;
+        }
+        
+        #contato .container-form .mitad input {
+            width: 48%;
+        }
+        
+        #contato .container-form .input-full {
+            width: 100%;
+        }
+        
+        #contato .titulo-secao {
+            text-align: center;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #111135;
+            text-decoration: underline;
+            text-decoration-color: #001F3D;
+            text-decoration-thickness: 5px;
+        }
+        
+        #contato .btn-enviar {
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: .5s;
+            padding: 10px 15px !important;
+        }
+        
+        #contato .btn-enviar:hover {
+            background-color: #001F3D;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #001F3D;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        footer a {
+            color: #fff;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+
+
+        /* *******************/
+        /* RESPONSIVIDADE DO S I T E */
+        /* *******************/
+
+
+        @media only screen and (max-width: 750px) {
+
+            /* seção I N I C I O */
+            #inicio .container .apresentacao h2 {
+                font-size: 40px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+            nav {
+                flex-direction: row;
+            }
+
+            .nav .menu{
+                display: block;
+                z-index: 1;
+                position: absolute;
+                right: 35px;
+                top: 65px;
+            }
+
+            nav ul {
+                display: none;
+                background: linear-gradient( rgba(0, 31, 61), rgba(70, 52, 85));
+                width: 100%;
+                height: 490%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            nav ul li {
+                margin: 40px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li a{
+                position: relative;
+                top: 380px;
+                left: 5px;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+
+            nav h1 {
+                position: relative;
+                top: 9px;
+            }
+
+            main {
+                flex-direction: column;
+            }
+            section {
+                width: 100%;
+            }
+
+
+            /* seção M E U S  P R O J E T O S */
+            #portifolio {
+                padding: 50px 0;
+            }
+            #portifolio .linha {
+                display: block;
+            }
+            #portifolio .linha .projeto {
+                margin: 10px auto;
+            }
+
+            /* seção C O N T A T O */
+            #contato {
+                padding: 50px 15px;
+            }
+            #contato .container-form .mitad {
+                margin-bottom: 15px;
+                display: block;
+            }
+            #contato .container-form .mitad input {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
